@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./slider.css">
+</head>
+
+<body>
+    <div id="slider">
+        <div class="slider-top-box">
+            <figure>
+                <img src="../img/264162.jpg" alt="" />
+                <figcaption></figcaption>
+            </figure>
+            <figure>
+                <img src="../img/264334.jpg" alt="" />
+                <figcaption></figcaption>
+            </figure>
+            <figure>
+                <img src="../img/264339.jpg" alt="" />
+                <figcaption></figcaption>
+            </figure>
+            <figure>
+                <img src="../img/264456.jpg" alt="" />
+                <figcaption></figcaption>
+            </figure>
+            <figure>
+                <img src="../img/264524.jpg" alt="" />
+                <figcaption></figcaption>
+            </figure>
+            <figure>
+                <img src="../img/264572.jpg" alt="" />
+                <figcaption></figcaption>
+            </figure>
+        </div>
+    </div>
+    <button id="btn">prev</button>
+    <button id="b">next</button>
+</body>
+<script src="slider.js"></script>
+<script>
+    slider.init({
+        //图片宽
+        imgWidth: '1200px',
+        // 当前页
+        // current: 3,         
+        //  是否显示缩略图
+        thumbs: true,
+        // 缩略图高度
+        // thumbsHeight: '80px', 
+        // 是否自动轮播
+        autoPlay: false       
+    });
+    document.getElementById('btn').onclick = slider.prev;
+    document.getElementById('b').onclick = slider.next;
+</script>
+
+</html>
